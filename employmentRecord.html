@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCMC</title>
+    <link rel="stylesheet" href="sonis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+    .warpper{
+        width: 100%;
+        display: block;
+
+        
+    
+       
+
+    }
+
+.emp_record{
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f3f3;
+    
+    
+
+}
+.record{
+    display:flex;
+}
+.left{
+
+width: 49%;
+background-color: #e7c2c2;
+padding: 20px 5px  20px 50px;
+margin-right: 0.5%;
+}
+.right{
+    
+    width: 49%;
+    background-color: #b0cff0;
+    padding: 20px 0  20px 50px;
+    margin-left: 0.5%;
+
+    
+
+
+}
+.employment2 p{
+    font-size: 20px;
+
+}
+    @media(max-width:700px){
+        @media(max-width: 700px){
+            .record{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+            .right, .left{
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+   
+
+   
+</style>
+
+</head>
+<body>
+    <section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">学科紹介 ▼</a>
+                        <ul class="dropdown">
+                        <li><a href="it_web.html">IT・WEB学科</a></li>
+                        <li><a href="ai.html">AIプロジェクト学科</a></li>
+                        <li><a href="business.html">ビジネスデザイン学科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">教育環境 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="industry-academia_collabration.html">産学連携</a></li>
+                            <li><a href="educationsupport.html">教育支援</a></li>
+                            <li><a href="accessToSchool.html">学校アクセス</a></li>
+                            </ul></li>
+                    <li><a href="">就職・進学 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="greatForFindingEmployment.html">就職に強い！</a></li>
+                                    <li><a href="employmentRecord.html">就職実績</a></li>
+                                    <li><a href="academicAchievement.html">進学実績</a></li>
+                                    </ul></li>
+                   
+                    <li><a href="#">充実の資格サポート</a></li>
+                    <li><a href="#">学会紹介 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="schoolOverview.html">学校の概要</a></li>
+                            <li><a href="educationalPhilosophy.html">教育理念・方針</a></li>
+                            <li><a href="schoolBasicINfo.html">学校基本情報</a></li>
+                            <li><a href="professionalPracticeSpecializedCourse.html">職業実践尃門課程</a></li>
+                            <li><a href="recruitmentInfo.html">採用情報</a></li>
+                            <li><a href="realatedOrganization.html">関連団体</a></li>
+                            </ul></li>
+                    
+                            <li><a href="#">入試情報 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-2/">マイページ登録</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement/">募集要項（日本人</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement-2/">募集要項（留学生）</a></li>
+                                
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-1/">AO入試(留学生)</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/extrance-examination/">ー般入試（留学生）</a></li>
+                                    </ul></li>
+                    
+                    <li><a href="#">お問い合わせ ▼</a><ul class="dropdown">
+                        <li><a href="AdmissionsInquiry.html">入学のお問い合わせ</a></li>
+                        <li><a href="ForCompanies.html">企業の方（求人票）</a></li>
+                        <li><a href="otherInquires.html">その他お問い合わせ</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>就職実績</h1>
+        
+    </section>
+ <!---------------------education support--------------------------> 
+ <section class="warpper">
+    <div class="emp_record">
+        <h2>主な就職先企業（過去3年間）</h2><hr>
+        <div class="record">
+            <div class="left">
+                <h2><b style="font-size: 40px;">■ </b>IT・AI関連</h2>
+                <ul>
+                    <li>ブライザ株式会社</li>
+                    <li>AGS株式会社</li>
+                    <li>株式会社メイテックフィルダーズ</li>
+                    <li>株式会社パーソンズ</li>
+                    <li>株式会社ミライト・モバイル・イースト</li>
+                    <li>FPTジャパンホールディングス株式会社</li>
+                    <li>アルテンジャパン株式会社</li>
+                    <li>株式会社アリーナ・プロフェッショナル</li>
+                    <li>パシフィックシステム株式会社</li>
+                    <li>日総工産株式会社</li>
+                    <li>ソレキア株式会社</li>
+                    <li>株式会社アウトソ－シングテクノロジー</li>
+                    <li>株式会社テクノプロ</li>
+                    <li>インタービレッジ株式会社</li>
+                    <li>株式会社プロセス・ラボ・ミクロン</li>
+                    <li>株式会社トップエンジニアリング</li>
+                    <li>株式会社トーモク</li>
+                    <li>株式会社VTIジャパン</li>
+                    <li>株式会社ブーミング</li>
+                    <li>GEL研究所株式会社</li>
+                    <li>K&Kソフト株式会社</li>
+                    <li>東和ソリューションエンジニアリング株式会社 <br>
+                        その他多数</li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2><b style="font-size: 40px;">■ </b>ビジネス関連 <br>
+                    （貿易、販売、ホテル、飲食、その他</h2>
+                <ul>
+                    <li>株式会社リロバケーションズ</li>
+                    <li>株式会社ノジマグループ・ITX株式会社</li>
+                    <li>株式会社ブロンコビリー</li>
+                    <li>株式会社DDホールディングス</li>
+                    <li>株式会社ゼンショーホールディングス</li>
+                    <li>くら寿司株式会社</li>
+                    <li>株式会社焼肉坂井ホールディングス</li>
+                    <li>株式会社ベジコープ</li>
+                    <li>医療法人満月会大月デンタルケア</li>
+                    <li>日東カストディアル・サービス株式会社</li>
+                    <li>株式会社マネジメント・シェルパ・クリエイト</li>
+                    <li>株式会社リブマックス</li>
+                    <li>株式会社四季リゾーツ</li>
+                    <li>株式会社グランベルホテル</li>
+                    <li>博多ホテルズ株式会社</li>
+                    <li>東京美装興業株式会社</li>
+                    <li>オレオウ・ベトナム事業協同組合</li>
+                    <li>株式会社アンピール</li>
+                    <li>リフト株式会社</li>
+                    <li>株式会社ビッグモーター</li>
+                    <li>株式会社トップワイジャパン <br>
+                        その他多数</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="emp_record">
+        <h2>就職実績</h2><hr>
+        <div class="record2">
+            <p>中央情報専門学校では、様々な業種・職種への就職をしています。
+                また、毎年上場企業への内定も数多くもらっています。</p> <br>
+            <p>業種・職種別に学生の就職実績をこちらから見ることができます。<br>
+                ※複数内定を獲得した学生は重複して掲載しております。</p>
+                <div class="detail_record">
+                    <h2>dlshls</h2>
+                </div>
+        </div>
+    </div>
+    
+
+
+
+ </section>
+   
+<!--footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        学校法人 中央情報学園<br>
+       <h2> 中央情報専門学校</h2><br>
+        〒352-0001 埼玉県新座市東北2-33-10 <br>
+        電話:048-474-6651 FAX:048-475-1814 <br>
+        姉妹校 早稲田文理専門学校<br>
+    </p>
+        <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+         </div>
+         <p>made with by <i class="fa-solid fa-heart"></i>khatri sonis  tamang sudeep</p>
+        
+</section>
+
+<!--js for toggle menu-->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+
+
+
+</body>
+</html>

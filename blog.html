@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCMC</title>
+    <link rel="stylesheet" href="sonis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+   
+    .warpper{
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .qualification{
+        width: 80%;
+        height: auto;
+        margin: 2px 5%;
+        padding: 20px 20px;
+        background-color: #f7efef;
+        border-radius: 10px;
+       
+
+
+        
+    }
+    .qualifi{
+        width: 100%;
+    }
+    .side_by_side{
+        width: 98%;
+        display: flex;
+        padding: 20px 10px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  
+    
+    .left{
+        display: left;
+        width: 49%;
+        height: auto;
+       
+    }
+    .q{
+        background-color: #f9dddd;
+        padding: 5px;
+        margin: 5px 10px 5px 0;
+    }
+    .right{
+        display: right;
+        width: 49%;
+        height: auto;
+       
+    }
+    .right img{
+        width: 90%;
+        margin-left: 10px;
+    }
+    .triangle{
+        justify-self: center;
+    }
+    .doubledisplay{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .left img{
+        justify-self: center;
+        align-self: center;
+    }
+    @media(max-width: 700px){
+        .qualification,.doubledisplay{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+        }
+        .side_by_side{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .left,.right{
+            width: 100%;
+        }
+
+    }
+    
+   
+
+    
+</style>
+</head>
+
+<body>
+    <section class="sub-header" style=" background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">学科紹介 ▼</a>
+                        <ul class="dropdown">
+                        <li><a href="it_web.html">IT・WEB学科</a></li>
+                        <li><a href="ai.html">AIプロジェクト学科</a></li>
+                        <li><a href="business.html">ビジネスデザイン学科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">教育環境 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="industry-academia_collabration.html">産学連携</a></li>
+                            <li><a href="educationsupport.html">教育支援</a></li>
+                            <li><a href="accessToSchool.html">学校アクセス</a></li>
+                            </ul></li>
+                    <li><a href="#">就職・進学 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="greatForFindingEmployment.html">就職に強い！</a></li>
+                                    <li><a href="employmentRecord.html">就職実績</a></li>
+                                    <li><a href="academicAchievement.html">進学実績</a></li>
+                                    </ul></li>
+                   
+                    <li><a href="blog.html">充実の資格サポート</a></li>
+                    <li><a href="#">学会紹介 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="schoolOverview.html">学校の概要</a></li>
+                            <li><a href="educationalPhilosophy.html">教育理念・方針</a></li>
+                            <li><a href="schoolBasicINfo.html">学校基本情報</a></li>
+                            <li><a href="professionalPracticeSpecializedCourse.html">職業実践尃門課程</a></li>
+                            <li><a href="recruitmentInfo.html">採用情報</a></li>
+                            <li><a href="realatedOrganization.html">関連団体</a></li>
+                            </ul></li>
+                    
+                            <li><a href="#">入試情報 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-2/">マイページ登録</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement/">募集要項（日本人</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement-2/">募集要項（留学生）</a></li>
+                                
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-1/">AO入試(留学生)</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/extrance-examination/">ー般入試（留学生）</a></li>
+                                    </ul></li>
+                    <li><a href="#">お問い合わせ ▼</a><ul class="dropdown">
+                        <li><a href="AdmissionsInquiry.html">入学のお問い合わせ</a></li>
+                        <li><a href="ForCompanies.html">企業の方（求人票）</a></li>
+                        <li><a href="otherInquires.html">その他お問い合わせ</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>充実の資格サポート</h1>
+        
+    </section>
+    <!-----------------blog--------------------->
+    <section class="warpper">
+        <div class="qualification">
+            <h2>充実の資格サポート</h2><hr><p>中央情報専門学校には、
+                就職につながる資格が取得できる様々なサポートがあります。</p>
+            <div class="qualifi">
+                <h2>IT国家資格取得が目指せるカリキュラム</h2>
+                <div class="side_by_side">
+                    <div class="left">
+                        <div class="q">
+                            <h2>ITパスポート試験</h2>
+                            <p>ITに関する基礎的な知識が証明できる国家試験。
+                                分野ごとに科目が用意されており、1年生の授業を通じて試験対策ができます。
+                                eラーニングサービスを利用して自ら学習や問題演習を進めることも可能です。</p>
+                        </div>
+                        <h2 class="triangle">▼</h2>
+                        <div class="q">
+                            <h2>基本情報技術者試験</h2>
+                            <p>ITエンジニアの登竜門と言われる国家試験。
+                                各専門科目で学んだ知識を踏まえて、1年生の春休みに対策講座を実施します。座学で獲得した知識に留まらず、
+                                データベース操作やプログラミングの実践を通じて
+                                総合的に身に付けられます。</p>
+                            </div>
+                            <h2 class="triangle">▼</h2>
+                        <div class="q">
+                            <h2>応用情報技術者試験</h2>
+                            <p>高度なIT人材を認定するための国家資格。
+                                基本情報技術者の知識をベースに、技術面だけでなくマネジメントや経営戦略のより深い知識が求められます。
+                                挑戦したい学生にはIT経験豊富な教員が質疑応答など個別にフォローします。</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                    <img src="images/parash.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+           <div class="quali">
+            <h2>iBut（インターネット ベーシック ユーザーテスト）を全員受験</h2>
+            <div class="doubledisplay">
+                <div class="left">
+                    <img src="images/support2.png" style="width: 90%;margin:10px ">
+                </div>
+                <div class="right"  style="padding: 20px; margin:10px; width:90%">
+                    <p>iButは幅広い分野の職業でインターネットが必須の時代、インターネット社会において必要な知識を統括的に学ぶ事ができる評価・認定制度です。
+                    </p>
+                    <p>
+                        中央情報専門学校では卒業までに全員がiButを受験し
+                        、合格することで以下の認定を受けます。<br>
+                        <ul>
+                            <li>100点の合格：ダイヤモンド</li>
+                            <li>90～99点の合格：ゴールド</li>
+                            <li>80～89点の合格：シルバー</li>
+                            <li>70～79点の合格：ブロンズ</li><br>
+                            <p>iButの試験は校内で実施します。本番の試験の前に模擬試験を行いますので、
+                                合格できる知識があることを確かめてから臨むことが可能です。</p>
+                        </ul>
+                        
+                    </p>
+                </div>
+            </div>
+           </div>
+          
+           <div class="quali">
+            <h2>Javaプログラミング能力認定試験対策講座</h2>
+            <div class="doubledisplay">
+                <div class="right" style="width: 100%;margin:10px">
+                    <p>Javaプログラミング能力認定試験は、Javaに関する知識やプログラミング能力を測る試験です
+                        。多くの言語に通じる「オブジェクト指向」の理解力が問われます。</p>
+                        <p>中央情報専門学校ではJavaプログラミング能力認定試験2級、3級の試験を学校内で実施しています。夏休み等に対策講座を実施しており、希望者は学習サポートを受けることができます。
+                            IT業界への就職に向けて多くの学生が受験しています。</p>
+                </div>
+                <div class="left" >
+                    <img src="images/support3.png" style="width: 90%; margin:10%">
+                   
+                </div>
+            </div>
+           </div>
+           <div class="quali">
+            <h2>Microsoft Office Word/Excel資格試験対策講座</h2>
+            <div class="doubledisplay">
+                <div class="left">
+                    <img src="images/support1.png" style="width: 90%;margin:10px ">
+                </div>
+                <div class="right"  style="margin: 10px;padding:20px; width:90%">
+                    <p>文書デザイン検定はWordの有効利用を通じた文書デザイン能力を測る試験、
+                        情報処理技能検定試験 表計算はExcelの有効利用を通じた情報処理能力を測る試験です。</p>
+                        <p>中央情報専門学校では文書デザイン検定、
+                            情報処理技能検定試験 表計算の試験を学校内で実施しています。希望者にはTeamsを使った対策講座を行い合格をサポートし、
+                             MOS Expertなどより上位の資格への挑戦を後押ししています。</p>
+               
+                </div>
+            </div>
+        </div>
+        <div class="quali">
+            <h2>プロモーションプランナー 2023年度 33名合格<br>
+                プロモーションプロデューサー 2023年度 37名合格</h2>
+            <div class="doubledisplay">
+                <div class="left" style="width: 90%; padding:20px; ">
+                    <p>プロモーションプランナーはマーケティング、メディア
+                        、広告の基礎的な知識と技術を身に付けていることを認定する資格試験です。
+                        プロモーションプロデューサーは広告宣伝に関する
+                        専門的な知識を身につけ、プロデューサーとしての視点で必要な管理業務を遂行できることを認定する資格試験です。
+                        この資格を保持していることで、マーケティング企画関連の仕事にも従事することができます。</p>
+                         <p>ビジネスデザイン学科では授業で資格の内容を学び、
+                            学校内で試験を受け、合格することで資格取得ができます
+                            。試験料は学校が負担します。</p>
+                </div>
+                <div class="right">
+                 <img src="images/support4.png" style="width: 90%; margin:10%">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+       
+        </div>
+
+
+       
+        
+    </section>
+    
+
+
+   
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        学校法人 中央情報学園<br>
+       <h2> 中央情報専門学校</h2><br>
+        〒352-0001 埼玉県新座市東北2-33-10 <br>
+        電話:048-474-6651 FAX:048-475-1814 <br>
+        姉妹校 早稲田文理専門学校<br>
+    </p>
+        <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+         </div>
+         <p>made with by <i class="fa-solid fa-heart"></i>khatri sonis  tamang sudeep</p>
+        
+</section>
+
+<!--js for toggle menu-->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+
+
+
+</body>
+</html>

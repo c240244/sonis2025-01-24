@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCMC</title>
+    <link rel="stylesheet" href="sonis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+.warpper{
+    margin: 0;
+    
+    justify-self: center;
+    display:block;
+    justify-content: center;
+    align-items: center;
+}
+.school_overview{
+    width: 80%;
+    padding: 5% ;
+    background-color: #f4e7e7;
+    justify-self: center;
+    display: block;
+
+}
+
+.overview{
+    width: 100%;
+    display: flex;
+
+}
+.left{
+    width: 50%;
+    text-align: center;
+
+
+}
+.left img{
+    width: 100%;
+    height: 95%;
+    
+}
+.right{
+    width: 50%;
+    height: 100%;
+    padding: 20px 10px;
+    text-align: center;
+    
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right p{
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+table{
+
+    width: 99%;
+    margin: 20px 10px;
+}
+ th{
+    width: 20%;
+    background-color: #e7b6b6;
+    
+}
+ table, tr, th, td{
+    border-collapse: collapse;
+    padding: 5px 3px;
+    border: 1px solid black;
+     text-align: center;
+    
+}
+.overview2{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.right img{
+    width: 90%;
+   
+}
+.left p{
+    text-align: center;
+    width: 90%;
+
+    
+}
+.over{
+    margin: 10px 5px;
+    padding: 10px 2px;
+}
+.over h2{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.abc{
+    padding:  0 5%;
+}
+@media(max-width: 700px){
+    .warpper{
+        margin-top: 5px;
+    }
+    .overview{
+        
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .overview2{
+       
+        display: flex;
+        flex-direction: column;
+    }
+    .right,.left{
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+   
+}
+
+
+
+
+   
+  
+   
+</style>
+
+</head>
+<body>
+    <section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">学科紹介 ▼</a>
+                        <ul class="dropdown">
+                        <li><a href="it_web.html">IT・WEB学科</a></li>
+                        <li><a href="ai.html">AIプロジェクト学科</a></li>
+                        <li><a href="business.html">ビジネスデザイン学科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">教育環境 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="industry-academia_collabration.html">産学連携</a></li>
+                            <li><a href="educationsupport.html">教育支援</a></li>
+                            <li><a href="accessToSchool.html">学校アクセス</a></li>
+                            </ul></li>
+                    <li><a href="">就職・進学 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="greatForFindingEmployment.html">就職に強い！</a></li>
+                                    <li><a href="employmentRecord.html">就職実績</a></li>
+                                    <li><a href="academicAchievement.html">進学実績</a></li>
+                                    </ul></li>
+                   
+                    <li><a href="blog.html">充実の資格サポート</a></li>
+                    <li><a href="courses.html">学会紹介 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="schoolOverview.html">学校の概要</a></li>
+                            <li><a href="educationalPhilosophy.html">教育理念・方針</a></li>
+                            <li><a href="schoolBasicINfo.html">学校基本情報</a></li>
+                            <li><a href="professionalPracticeSpecializedCourse.html">職業実践尃門課程</a></li>
+                            <li><a href="recruitmentInfo.html">採用情報</a></li>
+                            <li><a href="realatedOrganization.html">関連団体</a></li>
+                            </ul></li>
+                    
+                            <li><a href="#">入試情報 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-2/">マイページ登録</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement/">募集要項（日本人</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement-2/">募集要項（留学生）</a></li>
+                                
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-1/">AO入試(留学生)</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/extrance-examination/">ー般入試（留学生）</a></li>
+                                    </ul></li>
+                    
+                    <li><a href="contect.html">お問い合わせ ▼</a><ul class="dropdown">
+                        <li><a href="AdmissionsInquiry.html">入学のお問い合わせ</a></li>
+                        <li><a href="ForCompanies.html">企業の方（求人票）</a></li>
+                        <li><a href="otherInquires.html">その他お問い合わせ</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>学校の概要</h1>
+        
+    </section>
+ <!---------------------school overview-------------------------> 
+ <section class="warpper">
+    
+    <div class="school_overview">
+        <h2>学校概要</h2><hr>
+        <div class="overview">
+            <div class="left">
+            <img src="images/ai.jpg" alt="">
+            </div>
+            <div class="right">
+            <address>
+            
+                未来を創ろう<br>
+
+                明日への希望を胸に<br>
+                学び続ける者だけが成長し<br>
+                未来の成功を手にできる<br>
+
+                私たち中央情報専門学校は<br>
+                学生の“学び”と“成長”を支援する学校です<br>
+                未来へ共に歩んでいこう</address>
+                <p > 教育の基本理念 
+                    中央情報専門学校は、
+                    21世紀の日本と世界で
+                    新しいビジネスを生み出す、
+                    クリエイティブで社会に役立つ人材を育成する</p>
+          
+            
+            </div>
+        </div>
+        <table class="info_tr">
+            <tr>
+                <th>校名</th>
+                <td>	中央情報専門学校</td>
+            </tr>
+            <tr>
+                <th>校種</th>
+                <td>学校法人専修学校（埼玉県知事認可）</td>
+            </tr>
+            <tr>
+                <th>設置者</th>
+                <td>学校法人中央情報学園</td>
+            </tr>
+            <tr>
+                <th>所在</th>
+                <td>埼玉県新座市東北2-33-10</td>
+            </tr>
+            <tr>
+                <th>創立</th>
+                <td>1987年4月</td>
+            </tr>
+            <tr>
+                <th>設置課程</th>
+                <td>商業実務専門課程、工業専門課程</td>
+            </tr>
+            <tr>
+                <th>設置学科</th>
+                <td>全学科共に全日制昼間部</td>
+            </tr>
+
+        </table>
+        <table class="info_td">
+            <tr>
+                <th>学科名称</th>
+                <th>修業年限</th>
+                <th>入学定員</th>
+                <th>卒業時付与称号等</th>           
+            </tr>
+            <tr>
+                <td>IT・Web学科</td>
+                <td>2年制</td>
+                <td>90名</td>
+                <td>文部科学大臣認定 職業実践専門課程 専門士
+                    （工業専門課程）付与</td>
+            </tr>
+            <tr>
+                <td>AIプロジェクト学科</td>
+                <td>2年制</td>
+                <td>20名</td>
+                <td>文部科学大臣認定 職業実践専門課程 専門士（工業専門課程）付与</td>
+            </tr>
+            <tr>
+                <td>wewwer</td>
+                <td>qweq</td>
+                <td>qweqw</td>
+                <td>文部科学大臣認定職業実践専門課程 専門士
+                    （商業実務専門課程）付与</td>
+            </tr>
+            <tr>
+                <td>日本語本科</td>
+                <td>1.5年、2年コース</td>
+                <td>80名</td>
+                <td>大学・大学院・専門学校進学</td>
+            </tr>
+        </table>
+    </div>
+    <div class="school_overview">
+        <h2>学園について</h2><hr>
+        <div class="overview2">
+            <div class="left" style="width: 50%; text-align:center; padding:20px">
+            <p>学校法人中央情報学園は、昭和62年（1987年）埼玉県知事の認可を得て、「広く社会に役立つ、責任感と意欲を持った職業人を育成する」
+                ことを建学の教育理念に掲げ創立されました。<br>学校法人中央情報学園は、昭和62年（1987年）埼玉県知事の認可を得て、「広く社会に役立つ、責任感と意欲を持った職業人を育成する」
+                ことを建学の教育理念に掲げ創立されました。
+            </p>
+            </div>
+            <div class="right" style="width: 50%;">
+            <img src="images/ai.jpg" style="width: 100%;">
+            </div>
+        </div>
+        <div class="over">
+            <h2>学校法人中央情報学園</h2>
+            <div class="abc">
+            <p>埼玉県知事認可（1987年1月）</p>
+        </div>
+        </div>
+        <div class="over">
+            <h2>中央情報専門学校</h2>
+            <div class="abc">
+            <p>埼玉県知事認可（1987年1月）<br>
+                中央情報専門学校開校(1987年4月）<br>
+                文部科学大臣認定　職業実践専門課程　</p>
+                <ul>
+                    <li>IT・Web学科（2014年3月）</li>
+                    <li>ビジネスデザイン学科（2018年2月）</li>
+                    <li>AIプロジェクト学科（2024年3月）</li>
+                </ul>
+            </div>
+        </div>
+        <div class="over">
+            <h2>早稲田文理専門学校</h2>
+            <div class="abc">
+            <p>東京都豊島区認可（2010年8月）<br>
+                早稲田文理専門学校開校(2011年4月）<br>
+                文部科学大臣認定　職業実践専門課程</p>
+                <ul>
+                    <li>ゲームクリエイター学科（2015年2月）</li>
+                    <li>アプリ・Web制作学科（2020年3月）</li>
+                    <li>日中越英通訳・ガイド学科（2020年3月）</li>
+                    <li>営業マネジメント学科（2021年3月）</li>
+                    <li>AIデザイン学科（2023年3月）</li>
+                    <li>ビジネス起業経営学科（2024年3月）</li>
+                    <li>電子機器組込みソフトウェア学科（2024年3月）</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="school_overview">
+        <h2>沿革</h2><hr>
+        <table class="info_tr">
+            <tr>
+                <th rowspan="3">1987年</th>
+                <th>1月</th>
+                <td>埼玉県知事より学校法人
+                    中央情報学園の設立認可並びに中央情報専門学校の設置認可</td>
+            </tr>
+            <tr>
+                
+                <th>2月</th>
+                <td>学校法人中央情報学園設立</td>
+            </tr>
+            <tr>
+                
+                <th>4月</th>
+                <td>中央情報専門学校開校</td>
+            </tr>
+            <tr>
+                <th>1988年</th>
+                <th>9月</th>
+                <td>通産大臣より情報化人材育成連携機関委嘱校の指定を受ける</td>
+            </tr>
+            <tr>
+                <th>1990年</th>
+                <th>4月</th>
+                <td>中央情報専門学校に情報ビジネス科開設</td>
+            </tr>
+            <tr>
+                <th>1999年</th>
+                <th>3月</th>
+                <td>雇用・能力開発機構埼玉センターの委託により
+                    「緊急中高年就職推進委託訓練」を開始する</td>
+            </tr>
+            <tr>
+                <th>2000年</th>
+                <th>4月</th>
+                <td>中央情報専門学校に日本語本科開設</td>
+            </tr>
+            <tr>
+                <th rowspan="2">2006年</th>
+                <th>4月</th>
+                <td>	中央情報専門学校に高度情報技術者（国家資格）学科、
+                    システム管理科、eビジネス学科、医療情報科開設</td>
+            </tr>
+            <tr>
+                
+                <th>12月</th>
+                <td>「学園創立20周年記念感謝の集い」を開催</td>
+            </tr>
+            <tr>
+                <th>2009年</th>
+                <th>9月</th>
+                <td>東京都豊島区に中央情報キャリアセンターを開設</td>
+            </tr>
+            <tr>
+                <th>2010年</th>
+                <th>8月</th>
+                <td>東京都豊島区長より早稲田文理専門学校の設置認可を受ける</td>
+            </tr>
+            <tr>
+                <th>2011年</th>
+                <th>4月</th>
+                <td>早稲田文理専門学校開校（ビジネス起業経営学科、日中英通訳学科、ITモバイル学科
+                    、ゲーム・アニメ制作学科、組込みソフトウェア学科）</td>
+            </tr>
+            <tr>
+                <th>2012年</th>
+                <th>4月</th>
+                <td>中央情報専門学校にITプロフェッショナル学科
+                    、情報システム学科、Webビジネス学科開設</td>
+            </tr>
+            <tr>
+                <th>2014年</th>
+                <th>3月</th>
+                <td>中央情報専門学校情報システム学科が文部科学大
+                    臣より職業実践専門課程に認定される</td>
+            </tr>
+            <tr>
+                <th rowspan="2">2015年</th>
+                <th>2月</th>
+                <td>早稲田文理専門学校ゲーム制作学科、
+                    ビジネス起業経営学科が文部科学大臣より職業実践専門課程に認定される</td>
+            </tr>
+            <tr>
+                
+                <th>4月</th>
+                <td>中央情報専門学校
+                    情報システム学科をIT・Web学科に、Webビジネス学科をビジネスデザイン
+                    学科に名称変更 <br>早稲田文理専門学校 <br>
+                    ゲーム制作学科をゲームクリエイター学科に、
+                    ビジネス起業経営学科をクリエイティブビジネス経営学科に名称変更</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2016年</th>
+                <th>4月</th>
+                <td>学園のシンクタンクとして未来デジタル研究所設置<br>
+                    中央情報専門学校の「職業実践専門課程」の連携企業である富士通エフ・アイ・ピー株式会社と「教育協定」を締結</td>
+            </tr>
+            <tr>
+                
+                <th>8月</th>
+                <td>中央情報専門学校、
+                    早稲田文理専門学校共に「2016年日本留学AWARDS」専門学校・東日本部門受賞</td>
+            </tr>
+            <tr>
+                
+                <th>10月</th>
+                <td>学園創立30周年記念祝賀会開催（ホテル椿山荘東京）</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2017年</th>
+                <th>3月</th>
+                <td>早稲田文理専門学校2号館開館</td>
+            </tr>
+            <tr>
+                
+                <th>7月</th>
+                <td>学園創立30周年記念誌発刊</td>
+            </tr>
+            <tr>
+                
+                <th>8月</th>
+                <td>中央情報専門学校「2017年日本留学AWARDS」
+                    専門学校・東日本部門受賞</td>
+            </tr>
+            <tr>
+                <th rowspan="4">2018年</th>
+                <th>2月</th>
+                <td>中央情報専門学校 
+                    ビジネスデザイン学科が文部科学大臣より職業実践専門課程に認定され</td>
+            </tr>
+            <tr>
+                
+                <th>3月</th>
+                <td>早稲田文理専門学校2号館改修工事完了</td>
+            </tr>
+            <tr>
+                
+                <th>4月</th>
+                <td>早稲田文理専門学校に営業マネジメント学科新設 <br>
+                    中央情報専門学校 ITプロフェッショナル学科をICTマネジメント学科に名称変更</td>
+            </tr>
+            <tr>
+                
+                <th>8月</th>
+                <td>中央情報専門学校、早稲田文理専門学校共に
+                    「2018年日本留学AWARDS」専門学校・東日本部門受賞</td>
+            </tr>
+            <tr>
+                <th rowspan="2">2019年</th>
+                <th>4月</th>
+                <td>早稲田文理専門学校 IoT・組込みソフトウェア学科をロボット・電子機器制御学科に、
+                    クリエイティブビジネス経営学科をビジネス起業経営学科に名称変更</td>
+            </tr>
+            <tr>
+               
+                <th>8月</th>
+                <td>中央情報専門学校、早稲田文理専門学校共に
+                    「2019年日本留学AWARDS」専門学校・東日本部門受賞</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2020年</th>
+                <th>4月</th>
+                <td>早稲田文理専門学校 AIデザイン学科新設</td>
+            </tr>
+            <tr>
+                
+                <th>4月</th>
+                <td>オンライン授業の実施</td>
+            </tr>
+            <tr>
+                
+                <th>9月</th>
+                <td>中央情報専門学校「2020年日本留学AWARDS」専門学校・東日本部門受賞</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2021年</th>
+                <th>3月</th>
+                <td>早稲田文理専門学校 営業マネジメント
+                    学科が文部科学大臣より職業実践専門課程に認定される</td>
+            </tr>
+            <tr>
+               
+                <th>4月</th>
+                <td>中央情報専門学校にAIプロジェクト学科新設</td>
+            </tr>
+            <tr>
+                
+                <th>9月</th>
+                <td>中央情報専門学校「2021年日本留学AWARDS」
+                    専門学校 技能・技術系部門（東日本）受賞</td>
+            </tr>
+            <tr>
+                <th rowspan="3">2023年</th>
+                <th>3月</th>
+                <td>早稲田文理専門学校 AIデザイン学科が 
+                    文部科学大臣より職業実践専門課程に認定される</td>
+            </tr>
+            <tr>
+               
+                <th>9月</th>
+                <td>中央情報専門学校「2023年日本留学AWARDS」専門学校 技能・技術系部門（東日本）受賞、早稲田文理専門学校
+                    「2023年日本留学AWARDS」専門学校 社会・文化系部門（東日本）受賞</td>
+            </tr>
+            <tr>
+                
+                <th>12月</th>
+                <td>インドネシア国立ボゴール農科大学（IPB）とMOU教育協定締結</td>
+            </tr>
+            <tr>
+                <th>2024年</th>
+                <th>3月</th>
+                <td>中央情報専門学校　AIプロジェクト学科、早稲田文理専門学校　ビジネス起業経営学科、電子機器組込みソフト
+                    ウェア学科が文部科学大臣より職業実践専門課程に認定される</td>
+            </tr>
+           
+            
+            
+
+        </table>
+        
+
+    </div>
+
+ </section>
+    
+  
+
+
+
+
+<!--footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        学校法人 中央情報学園<br>
+       <h2> 中央情報専門学校</h2><br>
+        〒352-0001 埼玉県新座市東北2-33-10 <br>
+        電話:048-474-6651 FAX:048-475-1814 <br>
+        姉妹校 早稲田文理専門学校<br>
+    </p>
+        <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+         </div>
+         <p>made with by <i class="fa-solid fa-heart"></i>khatri sonis  tamang sudeep</p>
+        
+</section>
+
+<!--js for toggle menu-->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+
+
+
+</body>
+</html>

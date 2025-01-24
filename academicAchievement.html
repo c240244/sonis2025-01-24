@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCMC</title>
+    <link rel="stylesheet" href="sonis.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style>
+    .warpper{
+        width: 95%;
+        height: auto;
+        display: block;
+        justify-self: center;
+
+    }
+    .warpper h2{
+        font-size: 25px;
+    }
+    .warpper p{
+        font-size: 17px;
+    }
+    .ad_achievement{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        background-color: #f4efef;
+    }
+    .achiv{
+        margin: 2%;
+
+    }
+    .ach{
+        border: px solid gray;
+
+    }
+    .side_by_side{
+        width: 100%;
+        display: flex;
+        padding: 20px;
+    }
+    .side_by_side img{
+        width: 300px;
+        height: auto;
+        border: 2px solid grey;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+        margin-right: 5px;
+        width: 30%;
+
+    }
+    .side_by_side address{
+        margin-left: 5px;
+        font-weight: 700;
+    
+        padding: 10px 20px;
+
+    }
+    
+    
+    .achievement2{
+        background-color: #b7d1f7;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .achiv2 img{
+        width: auto;
+        border-radius: 10px;
+    }
+    @media(max-width: 700px){
+        .warpper{
+            display: flex;
+            flex-direction: column;
+        }
+        .side_by_side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .achiv2 img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+
+ 
+   
+</style>
+
+</head>
+<body>
+    <section class="sub-header"  style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">学科紹介 ▼</a>
+                        <ul class="dropdown">
+                        <li><a href="it_web.html">IT・WEB学科</a></li>
+                        <li><a href="ai.html">AIプロジェクト学科</a></li>
+                        <li><a href="business.html">ビジネスデザイン学科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">教育環境 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="industry-academia_collabration.html">産学連携</a></li>
+                            <li><a href="educationsupport.html">教育支援</a></li>
+                            <li><a href="accessToSchool.html">学校アクセス</a></li>
+                            </ul></li>
+                    <li><a href="">就職・進学 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="greatForFindingEmployment.html">就職に強い！</a></li>
+                                    <li><a href="employmentRecord.html">就職実績</a></li>
+                                    <li><a href="academicAchievement.html">進学実績</a></li>
+                                    </ul></li>
+                   
+                    <li><a href="blog.html">充実の資格サポート</a></li>
+                    <li><a href="courses.html">学会紹介 ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="schoolOverview.html">学校の概要</a></li>
+                            <li><a href="educationalPhilosophy.html">教育理念・方針</a></li>
+                            <li><a href="schoolBasicINfo.html">学校基本情報</a></li>
+                            <li><a href="professionalPracticeSpecializedCourse.html">職業実践尃門課程</a></li>
+                            <li><a href="recruitmentInfo.html">採用情報</a></li>
+                            <li><a href="realatedOrganization.html">関連団体</a></li>
+                            </ul></li>
+                    
+                            <li><a href="#">入試情報 ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-2/">マイページ登録</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement/">募集要項（日本人</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/requirement-2/">募集要項（留学生）</a></li>
+                                
+                                    <li><a href="https://ccmc.ac.jp/admission/how-to-application-1/">AO入試(留学生)</a></li>
+                                    <li><a href="https://ccmc.ac.jp/admission/extrance-examination/">ー般入試（留学生）</a></li>
+                                    </ul></li>
+                    
+                    <li><a href="contect.html">お問い合わせ ▼</a><ul class="dropdown">
+                        <li><a href="AdmissionsInquiry.html">入学のお問い合わせ</a></li>
+                        <li><a href="ForCompanies.html">企業の方（求人票）</a></li>
+                        <li><a href="otherInquires.html">その他お問い合わせ</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>進学</h1>
+        
+    </section>
+ <!---------------------academic achievement--------------------------> 
+ <section class="warpper">
+    
+    <div class="ad_achievement">
+        <h2>大学進学・編入</h2><hr>
+        <div class="achievement">
+            <p style="font-size: 20px;">中央情報専門学校を卒業した後に大学に進学する学生もいます。
+                また、当校の単位を交換することで大学により2年次または3年次に編入することもできます。
+                指定校推薦での3年次編入実績もあります。<br>一般的に、3年次編入の場合、大学に4年間通うよりも学費合計が安く抑えられます。
+                また、中央情報専門学校でITを専攻した後に文系の大学に編入し、
+                文理両方の能力を備えた人材として将来の仕事の可能性を広げることもできます。
+
+            </p>
+            <div class="achiv2">
+               <img src="images/chart1.png" >
+            </div>
+        </div>
+    </div>
+    <div class="ad_achievement">
+        <h2>主な大学進学実績</h2><hr>
+        <div class="achievement2">
+            <p>埼玉大学(3年次編入)
+                帝京大学(3年次編入)
+                西武文理大学(3年次編入)
+                尚美学園大学(3年次編入)
+                聖学院大学(3年次編入)
+                駿河台大学(3年次編入)
+                城西大学(3年次編入)
+                東京外国語大学
+                群馬大学
+                日本大学
+                東洋大学
+                湘南工科大学
+                駒沢大学
+                大東文化大学
+                中央学院大学
+                九州国際大学
+                淑徳大学
+                流通経済大学
+                愛国学園大学
+                至誠館大学
+                足利大学
+                北京語言大学東京校
+                上海大学東京校
+                日本経済大学
+                産業能率大学</p>
+        </div>
+    </div>
+    <div class="ad_achievement">
+        <h2>大学進学者メッセージ</h2><hr>
+        <div class="achievement3">
+            <div class="side_by_side">
+            <img src="images/sudip.png" style="width: 200px; height:200px">
+            <address style="text-decoration: solid;">
+                2021年度<br>
+                西武文理大学（3年次編入・指定校推薦）<br>
+                sudeep tamang <br>
+                ビジネスデザイン学科<br>
+                アン・ランゲージ・スクール成増校卒<br>
+                ネパール出身</address>
+            </div>
+            <p>大学では、コミュニケーション能力、グループワークを基礎とした実践力とホスピタリティなどを勉強しています。
+                授業では日本人の学生と話す機会があり友達もできました。
+                先生も、わからないところはゆっくり優しく教えてくれます。
+                3年編入の試験は面接で、「専門学校でどんな勉強をしたか？」「専門学校で一番がんばったことは何か？」「大学で何をしたいか？」という内容でした。
+                私は資格の勉強をがんばったことを話しました。
+                指定校推薦の３年編入なので、普通の試験よりも受験しやすいと思います。みなさん、チャレンジしてほしいです。</p>
+        </div>
+    </div>
+    <div class="ad_achievement">
+        <h2>sdhfshdk</h2><hr>
+        <div class="achievement4">
+            <p>あらゆる領域に絡むITの技術や知識を
+                当校で学ぶことで大学院に合格できる修士論文研究計画書の準備が可能です。</p>
+            <div class="achiv2">
+                <img src="images/chart2.png" >
+            </div>
+            
+        </div>
+    </div>
+    <div class="ad_achievement">
+        <h2>大学院進学</h2><hr>
+        <div class="achievement5">
+            <p>九州大学大学院,    
+                高千穂大学大学院,     
+                北陸先端科学技術大学院大学,    
+                東洋大学大学院,     
+                東京農工大学大学院,   
+                二松学舎大学大学院</p>
+        </div>
+    </div>
+    <div class="ad_achievement">
+        <h2>大学院進学者メッセージ</h2><hr>
+        <div class="achievement3">
+            <div class="side_by_side">
+            <img src="images/parash.jfif">
+            <address>
+                2021年度 <br>
+                九州大学大学院システム情報科学府 <br>
+                dhungal parash<br>
+                夏 商周<br>
+                AIプロジェクト学科<br>
+                東京国際文化学院新宿校卒<br>
+                ネパール出身</address>
+            </div>
+            <p>私は中国の大学で電子工学を学びました。 AI関連の仕事や研究に携わりたいと思って日本に来ました。 私はAIについて体系的に学んだことがなかったので、中央情報専門学校で勉強することにしました。 学校のカリキュラムは非常に合理的です。 AI理論とプログラミングは密接に関連しています。 同時に、AIの分野のスタッフが学校に来て、現在の産業用アプリケーションについて説明します。
+                私は中国の大学で電子工学を学びました。 AI関連の仕事や研究に携わりたいと思って日本に来ました。 私はAIについて体系的に学んだことがなかったので、中央情報専門学校で勉強することにしました。 学校のカリキュラムは非常に合理的です。 AI理論とプログラミングは密接に関連しています。 同時に、AIの分野のスタッフが学校に来て、現在の産業用アプリケーションについて説明します。
+                 この間、AI関連の技術を徐々に学び、研究の方向性を明確にしていきました。 この間、AI関連の技術を徐々に学び、研究の方向性を明確にしていきました。</p>
+        </div>
+    </div>
+
+ </section>
+    
+  
+
+
+
+
+<!--footer-->
+<section class="footer">
+    <h4>About us</h4>
+    <p>
+        学校法人 中央情報学園<br>
+       <h2> 中央情報専門学校</h2><br>
+        〒352-0001 埼玉県新座市東北2-33-10 <br>
+        電話:048-474-6651 FAX:048-475-1814 <br>
+        姉妹校 早稲田文理専門学校<br>
+    </p>
+        <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""> <i class="fa-brands fa-twitter"></i></a>
+         </div>
+         <p>made with by <i class="fa-solid fa-heart"></i>khatri sonis  tamang sudeep</p>
+        
+</section>
+
+<!--js for toggle menu-->
+<script>
+    var navLinks =document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0"
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px"
+    }
+</script>
+
+
+
+</body>
+</html>
